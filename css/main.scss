@@ -1,24 +1,29 @@
 * {
     -webkit-font-smoothing: antialiased;
     font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 html, body {
     padding: 0;
     margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFF;
 }
 
 .menu {
-    background-color: lightsalmon;
     padding: 30px 0;
 
     .series-wrap {
         width: 100%;
-        background-color: mediumaquamarine;
+
+        span {
+            font-weight: 700;
+            font-size: 20px;
+        }
     }
 
     .item-wrap {
-        background-color: lightgreen;
 
         .item {
             width: 100%;
@@ -26,7 +31,14 @@ html, body {
             margin-top: 20px;
             padding: 10px;
             display: flex;
-            background-color: lightseagreen;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-sizing: border-box;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
 
             .item-img-wrap {
                 width: 60%;
@@ -44,20 +56,57 @@ html, body {
             .item-text-wrap {
                 width: 40%;
                 height: 100%;
-                background-color: lightskyblue;
-                padding: 10px;
+                padding: 10px 0 0 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
                 .item-title-wrap {
-                    font-weight: 500;
-                    background-color: mediumaquamarine;
+                    width: calc(60% - 10px);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    position: absolute;
+                    top: calc(50% - 10px);
+                    left: 10px;
+                    transform: translateY(-50%);
+                    padding: 5px;
+
+                    span {
+                        display: block;
+                        font-weight: 500;
+                        text-align: center;
+
+                        &:nth-of-type(2) {
+                            font-size: 12px;
+                        }
+                    }
                 }
 
                 .item-ingredient-wrap {
-                    background-color: lightslategrey;
+                    
+                    span {
+                        display: block;
+                        text-decoration: underline;
+                        line-height: 1.75;
+                        font-size: 14px;
+                    }
                 }
 
                 .item-temperature-wrap {
-                    background-color: lightseagreen;
+                    display: flex;
+                    justify-content: flex-end;
+                    
+                    span {
+                        display: inline-block;
+                        border: 1px solid rgba(255, 255, 255, 0.8);
+                        border-radius: 2px;
+                        padding: 2px 4px;
+                        font-size: 14px;
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
+
+                    span + span {
+                        margin-left: 10px;
+                    }
                 }
             }
         }
