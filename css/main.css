@@ -38,6 +38,7 @@ html, body {
 .menu .item-wrap .item .item-img-wrap {
   width: 60%;
   height: 100%;
+  border-radius: 5px;
   overflow: hidden;
 }
 .menu .item-wrap .item .item-img-wrap img {
