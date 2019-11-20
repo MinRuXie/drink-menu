@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+<body>
+    <section class="menu" id="tea">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="series-wrap">
+                        <span>{{series.name_ch}}</span>
+                        <span>{{series.name_en}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" v-for="menu in menus">
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="item-img-wrap">
+                                <img v-bind:src="menu.img" draggable="false" />
+                            </div>
+                            <div class="item-text-wrap">
+                                <div class="item-title-wrap">
+                                    <span>{{menu.name_ch}}</span>
+                                    <span>{{menu.name_en}}</span>
+                                </div>
+                                <div class="item-ingredient-wrap" v-for="ingredient in menu.ingredients">
+                                    <span>{{ingredient}}</span>
+                                </div>
+                                <div class="item-temperature-wrap" v-for="temperature in menu.temperatures">
+                                    <span>{{temperature}}</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="milk-tea">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="series-wrap">
+                        <span>{{series.name_ch}}</span>
+                        <span>{{series.name_en}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" v-for="menu in menus">
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="item-img-wrap">
+                                <img v-bind:src="menu.img" draggable="false" />
+                            </div>
+                            <div class="item-text-wrap">
+                                <div class="item-title-wrap">
+                                    <span>{{menu.name_ch}}</span>
+                                    <span>{{menu.name_en}}</span>
+                                </div>
+                                <div class="item-ingredient-wrap" v-for="ingredient in menu.ingredients">
+                                    <span>{{ingredient}}</span>
+                                </div>
+                                <div class="item-temperature-wrap" v-for="temperature in menu.temperatures">
+                                    <span>{{temperature}}</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="fruit-tea">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="series-wrap">
+                        <span>{{series.name_ch}}</span>
+                        <span>{{series.name_en}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" v-for="menu in menus">
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="item-img-wrap">
+                                <img v-bind:src="menu.img" draggable="false" />
+                            </div>
+                            <div class="item-text-wrap">
+                                <div class="item-title-wrap">
+                                    <span>{{menu.name_ch}}</span>
+                                    <span>{{menu.name_en}}</span>
+                                </div>
+                                <div class="item-ingredient-wrap" v-for="ingredient in menu.ingredients">
+                                    <span>{{ingredient}}</span>
+                                </div>
+                                <div class="item-temperature-wrap" v-for="temperature in menu.temperatures">
+                                    <span>{{temperature}}</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="cocoa">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="series-wrap">
+                        <span>{{series.name_ch}}</span>
+                        <span>{{series.name_en}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" v-for="menu in menus">
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="item-img-wrap">
+                                <img v-bind:src="menu.img" draggable="false" />
+                            </div>
+                            <div class="item-text-wrap">
+                                <div class="item-title-wrap">
+                                    <span>{{menu.name_ch}}</span>
+                                    <span>{{menu.name_en}}</span>
+                                </div>
+                                <div class="item-ingredient-wrap" v-for="ingredient in menu.ingredients">
+                                    <span>{{ingredient}}</span>
+                                </div>
+                                <div class="item-temperature-wrap" v-for="temperature in menu.temperatures">
+                                    <span>{{temperature}}</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="almond">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="series-wrap">
+                        <span>{{series.name_ch}}</span>
+                        <span>{{series.name_en}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" v-for="menu in menus">
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="item-img-wrap">
+                                <img v-bind:src="menu.img" draggable="false" />
+                            </div>
+                            <div class="item-text-wrap">
+                                <div class="item-title-wrap">
+                                    <span>{{menu.name_ch}}</span>
+                                    <span>{{menu.name_en}}</span>
+                                </div>
+                                <div class="item-ingredient-wrap" v-for="ingredient in menu.ingredients">
+                                    <span>{{ingredient}}</span>
+                                </div>
+                                <div class="item-temperature-wrap" v-for="temperature in menu.temperatures">
+                                    <span>{{temperature}}</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="water">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="series-wrap">
+                        <span>{{series.name_ch}}</span>
+                        <span>{{series.name_en}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" v-for="menu in menus">
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="item-img-wrap">
+                                <img v-bind:src="menu.img" draggable="false" />
+                            </div>
+                            <div class="item-text-wrap">
+                                <div class="item-title-wrap">
+                                    <span>{{menu.name_ch}}</span>
+                                    <span>{{menu.name_en}}</span>
+                                </div>
+                                <div class="item-ingredient-wrap" v-for="ingredient in menu.ingredients">
+                                    <span>{{ingredient}}</span>
+                                </div>
+                                <div class="item-temperature-wrap" v-for="temperature in menu.temperatures">
+                                    <span>{{temperature}}</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/vue.min.js"></script>
+	<script src="js/data.js"></script>
+</body>
+</html>
