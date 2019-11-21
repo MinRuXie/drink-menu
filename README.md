@@ -6,3 +6,6 @@
 * jQuery
 * Bootstrap
 * Vus.js
+
+## 外部資源
+* [免費圖庫 Unsplash](https://unsplash.com/)
