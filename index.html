@@ -10,6 +10,13 @@
 </head>
 <body>
 
+    <section id="random">
+        <div class="text-wrap">
+            今天喝什麼？<span class="selection"></span>
+        </div>
+        <input id="random-btn" class="btn" type="button" value="隨機決定！">
+    </section>
+
     <section id="main">
         <todo-item
             v-for="item in series"
@@ -22,5 +29,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/vue.min.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
